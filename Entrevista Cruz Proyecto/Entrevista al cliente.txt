@@ -1,0 +1,9 @@
+Entrevista al cliente
+
+¿Cuál sera el objetivo principal de la plataforma musical? 
+  ¿Qué tipo de usuarios espera manejar?  
+  ¿Qué información desea controlar dentro del sistema?  
+  ¿Qué funciones considera indispensables en la plataforma?  
+  ¿Qué tipo de reportes le gustaría obtener?  
+  ¿Qué nivel de seguridad considera necesario?  
+  ¿Planea implementar suscripciones o monetización?  

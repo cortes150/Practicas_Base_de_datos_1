@@ -1,0 +1,11 @@
+Sistema de Música / Plataforma de Gestión Musical
+
+Concepto:
+Es un sistema de base de datos que permite organizar y gestionar la información de una plataforma musical, incluyendo usuarios, artistas, álbumes, canciones y listas de reproducción (playlists), facilitando la administración del contenido musical y la interacción de los usuarios con sus canciones favoritas.
+
+Ejemplo:
+Por ejemplo, cuando un usuario se registra en el sistema, se almacenan sus datos personales junto con las playlists que crea y las canciones que agrega a ellas. Asimismo, el sistema permite consultar información sobre artistas, álbumes y canciones disponibles, permitiendo al usuario organizar su biblioteca musical y acceder fácilmente a su contenido.
+
+Estudiantes:
+Fabiana Monje Quino
+Cruz Poma Jurado
