@@ -1,0 +1,33 @@
+Entrevista al Cliente
+Descripción del formulario
+
+¿Cuál es el objetivo principal de la plataforma y qué problema concreto busca resolver en el mercado actual de distribución de videojuegos?
+*
+¿A qué segmento de usuarios está dirigida la plataforma? ¿Se enfoca en un tipo específico de jugador, desarrollador o región geográfica?
+*
+
+¿Cuáles son las funcionalidades mínimas indispensables para la primera versión del sistema (MVP), y cuáles se consideran mejoras futuras?
+*
+¿La plataforma debe funcionar únicamente en web, o también se requiere una aplicación de escritorio o móvil desde el inicio?
+*
+Solo web
+Web+Escritorio
+Web+Movil
+Web+Escritorio+Movil
+¿Qué tipos de usuarios tendrá el sistema y qué permisos o acciones podrá realizar cada uno? ¿Se contempla un rol de desarrollador/publicador de juegos, además del usuario final y el administrador?
+*
+¿Se permitirá el registro mediante redes sociales (Google, Steam, etc.) o solo a través de correo electrónico y contraseña propia de la plataforma? 
+*
+¿Cuáles son las reglas de negocio asociadas a la compra de videojuegos? Por ejemplo: ¿se permitirán reembolsos? ¿los juegos adquiridos se pueden transferir o regalar a otro usuario?
+*
+¿Cómo funcionará el sistema de descuentos y promociones? ¿Habrá cupones, temporadas de ventas, precios regionales o membresías con beneficios?
+*
+¿Los videojuegos serán solo para descarga digital, o también se contempla streaming de juegos (cloud gaming) sin necesidad de descargarlos?
+*
+¿El sistema deberá incluir un módulo social (lista de amigos, chat, grupos, foros)? De ser así, ¿qué nivel de profundidad se espera en esas funciones?
+*
+¿Existen preferencias o restricciones en cuanto a tecnologías, lenguajes de programación, gestores de base de datos o servicios en la nube que deba utilizar el sistema?
+*
+ 
+¿Qué medidas de seguridad se consideran obligatorias para el manejo de datos personales y transacciones de pago? ¿Se debe cumplir con alguna normativa específica (GDPR, PCI-DSS, LGPD)? 
+Tipo de pregunta
