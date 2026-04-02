@@ -1,0 +1,79 @@
+
+Encuesta sobre habitos de consumo musical
+Descripción del formulario
+
+¿Con que frecuencia escchas música?
+Todos los dias 
+Varias veces a la semana
+Ocacionalmente
+Casi nunca
+
+¿Cuánto tiempo al día escuchas música?
+Menos de 30 minutos
+Entre 30 minutos y 1 hora
+Entre 1 y 3 horas
+Mas de 3 horas
+
+¿Qué tipo de música escuchas con mayor frecuencia? (puedes seleccionar varias)  
+Pop
+Rock
+Reggaetón
+Electrónica
+Hip-Hop / Rap
+Musica clásica
+Otro:
+
+¿Desde qué dispositivo escuchas música principalmente?  
+Celular
+Computadora / Laptop
+Tablet
+Otro:
+
+¿Qué plataforma utilizas para escuchar música?  
+Spotify
+Youtube
+Apple Music
+Radio
+Otro:
+
+¿Sueles crear tus propias playlists?  
+Si
+No
+
+¿Qué tan importante es para ti crear playlists personalizadas?   (Escala del 1 al 5)
+1= Nada Importante
+5= Muy Importante
+
+¿Qué criterio usas para organizar tus playlists?  
+Por genero musical
+Por estado de ánimo
+Por artista
+Por momento (ej: estudio, ejercicio)
+
+¿Te gusta descubrir música nueva?  
+Sí, constantemente
+A veces
+No mucho
+
+¿Cómo descubres nueva música?  
+Recomiendaciones de apps 
+Redes sociales
+Amigos
+YouTube / tendencias
+
+¿Sigues a tus artistas favoritos?  
+Sí
+No
+
+¿Qué tan importante es para ti conocer información del artista (biografía, álbumes, etc.)?   (Escala del 1 al 5)
+
+¿Has comprado música digital o suscripciones premium?  
+Sí
+No
+
+¿Te gustaría que una app te recomiende música según tus gustos?  
+Sí
+No
+Tal vez
+ 
+¿Qué característica te gustaría que tenga una plataforma musical?   (Pregunta abierta)
