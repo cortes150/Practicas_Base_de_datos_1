@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Música</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="background-orchestration">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+</div>
+
+<div class="container">
+
+    <!-- DASHBOARD -->
+    <div id="dashboard-view" class="view hidden">
+        <h1 class="welcome-text">Bienvenido, <span id="display-username"></span></h1>
+        <p class="subtitle">Acceso correcto</p>
+        <button id="logout-btn" class="btn primary-btn mt-4">Cerrar sesión</button>
+    </div>
+
+    <!-- LOGIN / REGISTER -->
+    <div id="auth-view" class="view">
+        <div class="auth-box">
+
+            <div class="auth-header">
+                <h2 id="title">Iniciar Sesión</h2>
+                <p id="subtitle">Ingresa tus datos</p>
+            </div>
+
+            <div id="alert-container" class="alert hidden"></div>
+
+            <form id="form">
+
+                <!-- NOMBRE -->
+                <div class="input-group" id="nombre-group" style="display:none;">
+                    <label>Nombre</label>
+                    <div class="input-wrapper">
+                        <input type="text" id="nombre" placeholder="Tu nombre">
+                    </div>
+                </div>
+
+                <!-- EMAIL -->
+                <div class="input-group">
+                    <label>Correo</label>
+                    <div class="input-wrapper">
+                        <input type="email" id="email" required>
+                    </div>
+                </div>
+
+                <!-- PASSWORD -->
+                <div class="input-group">
+                    <label>Contraseña</label>
+                    <div class="input-wrapper">
+                        <input type="password" id="password" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn primary-btn mt-4" id="submit-btn">
+                    Ingresar
+                </button>
+
+                <div class="auth-footer">
+                    <span id="toggle-text">¿No tienes cuenta?</span>
+                    <button type="button" id="toggle-btn" class="text-btn">
+                        Regístrate
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
