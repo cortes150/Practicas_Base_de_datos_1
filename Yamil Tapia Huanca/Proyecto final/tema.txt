@@ -1,0 +1,12 @@
+Gestión Inteligente de Gimnasio
+‎Concepto:
+‎Es un sistema de base de datos que permite organizar y controlar 
+la información de un gimnasio, como clientes, pagos, membresías 
+y asistencia, facilitando una mejor administración.
+‎Ejemplo:
+‎Por ejemplo, cuando un cliente se inscribe, el sistema registra
+ sus datos, su tipo de membresía y sus pagos, permitiendo consultar 
+si está al día o controlar su asistencia al gimnasio.
+
+Estudiantes: Cristian Ramos Mendoza 
+Yamil Tapia Huanca
