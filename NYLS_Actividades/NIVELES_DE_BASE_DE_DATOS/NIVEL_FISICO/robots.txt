@@ -1,0 +1,49 @@
+MATCH (n)-[r]->(m) RETURN n, r, m;
+
+MATCH (rb:Robot_Batalla {id_robot_batalla: 1}), (b:Batalla {id_batalla: 1}) CREATE (rb)-[:TIENE]->(b);
+MATCH (rb:Robot_Batalla {id_robot_batalla: 2}), (b:Batalla {id_batalla: 1}) CREATE (rb)-[:TIENE]->(b);
+MATCH (rb:Robot_Batalla {id_robot_batalla: 3}), (b:Batalla {id_batalla: 2}) CREATE (rb)-[:TIENE]->(b);
+MATCH (rb:Robot_Batalla {id_robot_batalla: 4}), (b:Batalla {id_batalla: 3}) CREATE (rb)-[:TIENE]->(b);
+MATCH (rb:Robot_Batalla {id_robot_batalla: 5}), (b:Batalla {id_batalla: 3}) CREATE (rb)-[:TIENE]->(b);
+
+MATCH (r:Robot {id_robot: 1}), (rb:Robot_Batalla {id_robot_batalla: 1}) CREATE (r)-[:TIENE]->(rb);
+MATCH (r:Robot {id_robot: 2}), (rb:Robot_Batalla {id_robot_batalla: 2}) CREATE (r)-[:TIENE]->(rb);
+MATCH (r:Robot {id_robot: 3}), (rb:Robot_Batalla {id_robot_batalla: 3}) CREATE (r)-[:TIENE]->(rb);
+MATCH (r:Robot {id_robot: 4}), (rb:Robot_Batalla {id_robot_batalla: 4}) CREATE (r)-[:TIENE]->(rb);
+MATCH (r:Robot {id_robot: 1}), (rb:Robot_Batalla {id_robot_batalla: 5}) CREATE (r)-[:TIENE]->(rb);
+
+MATCH (e:Equipo {id_equipo: 1}), (r:Robot {id_robot: 1}) CREATE (e)-[:TIENE]->(r);
+MATCH (e:Equipo {id_equipo: 1}), (r:Robot {id_robot: 2}) CREATE (e)-[:TIENE]->(r);
+MATCH (e:Equipo {id_equipo: 2}), (r:Robot {id_robot: 3}) CREATE (e)-[:TIENE]->(r);
+MATCH (e:Equipo {id_equipo: 3}), (r:Robot {id_robot: 4}) CREATE (e)-[:TIENE]->(r);
+
+CREATE (:Robot_Batalla {id_robot_batalla: 1, id_robot: 1, id_batalla: 1, resultado: 'Ganador',  puntos_obtenidos: 100});
+CREATE (:Robot_Batalla {id_robot_batalla: 2, id_robot: 2, id_batalla: 1, resultado: 'Perdedor', puntos_obtenidos: 40});
+CREATE (:Robot_Batalla {id_robot_batalla: 3, id_robot: 3, id_batalla: 2, resultado: 'Ganador',  puntos_obtenidos: 90});
+CREATE (:Robot_Batalla {id_robot_batalla: 4, id_robot: 4, id_batalla: 3, resultado: 'Ganador',  puntos_obtenidos: 85});
+CREATE (:Robot_Batalla {id_robot_batalla: 5, id_robot: 1, id_batalla: 3, resultado: 'Perdedor', puntos_obtenidos: 60});
+
+CREATE (:Batalla {id_batalla: 1, fecha: '2026-03-15', ubicacion: 'La Paz Arena'});
+CREATE (:Batalla {id_batalla: 2, fecha: '2026-04-01', ubicacion: 'Cochabamba Dome'});
+CREATE (:Batalla {id_batalla: 3, fecha: '2026-04-10', ubicacion: 'Santa Cruz Ring'});
+
+CREATE (:Robot {id_robot: 1, nombre: 'Terminator X', modelo: 'TX-500', peso: 12.5});
+CREATE (:Robot {id_robot: 2, nombre: 'Iron Crusher',  modelo: 'IC-200', peso: 10.0});
+CREATE (:Robot {id_robot: 3, nombre: 'Steel Fury',    modelo: 'SF-100', peso: 8.0});
+CREATE (:Robot {id_robot: 4, nombre: 'Volt Smash',    modelo: 'VS-300', peso: 11.0});
+
+CREATE (:Equipo {id_equipo: 1, nombre_equipo: 'Team Alpha', pais: 'Bolivia'});
+CREATE (:Equipo {id_equipo: 2, nombre_equipo: 'Team Beta',  pais: 'Argentina'});
+CREATE (:Equipo {id_equipo: 3, nombre_equipo: 'Team Gamma', pais: 'Chile'});
+
+CREATE CONSTRAINT equipo_id IF NOT EXISTS
+  FOR (e:Equipo) REQUIRE e.id_equipo IS UNIQUE;
+
+CREATE CONSTRAINT robot_id IF NOT EXISTS
+  FOR (r:Robot) REQUIRE r.id_robot IS UNIQUE;
+
+CREATE CONSTRAINT batalla_id IF NOT EXISTS
+  FOR (b:Batalla) REQUIRE b.id_batalla IS UNIQUE;
+
+CREATE CONSTRAINT robot_batalla_id IF NOT EXISTS
+  FOR (rb:Robot_Batalla) REQUIRE rb.id_robot_batalla IS UNIQUE;

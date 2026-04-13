@@ -1,0 +1,10 @@
+[{
+  "_id": {
+    "$oid": "69dc52f2edd6bee97162219f"
+  },
+  "numero_pedido": 1,
+  "id_cliente": 1,
+  "fecha": "2026-04-12",
+  "total": 90,
+  "metodo_pago": "Efectivo"
+}]

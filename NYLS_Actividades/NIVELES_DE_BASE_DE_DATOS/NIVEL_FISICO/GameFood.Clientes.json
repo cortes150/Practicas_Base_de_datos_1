@@ -1,0 +1,12 @@
+[{
+  "_id": {
+    "$oid": "69dc5214edd6bee971622196"
+  },
+  "id_cliente": 1,
+  "nombre_completo": {
+    "nombre": "Juan",
+    "apellido_paterno": "Pérez",
+    "apellido_materno": "García"
+  },
+  "puntos_vida": 100
+}]
