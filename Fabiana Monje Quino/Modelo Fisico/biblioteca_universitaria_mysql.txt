@@ -1,0 +1,82 @@
+CREATE TABLE Estudiante(
+    Id_estudiante int AUTO_INCREMENT PRIMARY KEY,
+    Codigo_matricula varchar(30) UNIQUE not null,
+    nombre varchar(50),
+    Apellido_paterno varchar(50),
+    Apellido_materno varchar(50),
+    carrera varchar(100),
+    semestre int,
+    calle varchar(50),
+    numero varchar(50),
+    ciudad varchar(50),
+    correo varchar(100),
+    edad int
+)
+CREATE TABLE telefono_estudiante(
+    Id_telefono_estudiante int AUTO_INCREMENT PRIMARY KEY,
+    nombre varchar(50),
+    Id_estudiante int,
+    FOREIGN KEY(Id_estudiante) REFERENCES estudiante(Id_estudiante)
+)
+CREATE TABLE Libro(
+    Id_libro int AUTO_INCREMENT PRIMARY KEY,
+    titulo varchar(50) ,
+    editorial varchar(50)
+);
+CREATE table Categoria_libro(
+    Id_categoria int AUTO_INCREMENT PRIMARY KEY,
+    nombre varchar(50),
+    Id_libro int,
+    FOREIGN KEY(Id_libro) REFERENCES Libro(Id_libro)
+);
+CREATE TABLE Bibliotecario(
+    Id_bibliotecario int AUTO_INCREMENT PRIMARY KEY,
+    nombre varchar(50),
+    Apellido_paterno varchar(50),
+    Apellido_materno varchar(50),
+    anios_experiencia int,
+    telefono_contacto varchar(50),
+    turno varchar(50)
+);
+CREATE TABLE Prestamo(
+    Id_prestamo int AUTO_INCREMENT PRIMARY KEY,
+    fecha_devolucion date,
+    fecha_prestamo date,
+    fecha_devolucion_prevista date,
+    Id_libro int,
+    Id_bibliotecario int,
+    Id_estudiante int,
+    FOREIGN KEY(Id_libro) REFERENCES Libro(Id_libro),
+	FOREIGN KEY(Id_bibliotecario) REFERENCES Bibliotecario(Id_bibliotecario),
+    FOREIGN KEY(Id_estudiante) REFERENCES estudiante(Id_estudiante)
+);
+CREATE TABLE Autor(
+   Id_autor int AUTO_INCREMENT PRIMARY KEY, 
+   nombre varchar(50),
+   Apellido_paterno varchar(50),
+   Apellido_materno varchar(50)
+);
+
+CREATE TABLE Autor_libro(
+    Id_autor_libro int AUTO_INCREMENT PRIMARY KEY,
+    Id_autor int,
+    Id_libro INT,
+    FOREIGN KEY(Id_libro) REFERENCES Libro(Id_libro),
+    FOREIGN KEY(Id_autor) REFERENCES Autor(Id_autor)
+);
+CREATE TABLE Turno_bibliotecario(
+    Id_turno_bibliotecario int AUTO_INCREMENT PRIMARY KEY,
+    nombre_turno varchar(50),
+    Id_bibliotecario int,
+    FOREIGN KEY(Id_bibliotecario) REFERENCES Bibliotecario(Id_bibliotecario)
+);
+CREATE TABLE telefono_bibliotecario(
+    Id_telefono_bibliotecario int AUTO_INCREMENT PRIMARY KEY,
+    numero varchar(50),
+    Id_bibliotecario int,
+    FOREIGN KEY(Id_bibliotecario) REFERENCES Bibliotecario(Id_bibliotecario)
+)
+    
+    
+    
+    
