@@ -1,0 +1,45 @@
+estudiante:
+id estudiante
+nombre
+carrera
+edad
+
+proyecto_estudiante:
+id_proyecto
+id_estudiante
+id_proyectoestudiante
+
+proyecto:
+id_proyecto
+id_materia
+tema
+fecha_presentacion
+estado
+
+materia:
+nombre
+horario
+creditos
+id_materia
+
+proyecto_jurado:
+id_proyecto
+id_jurado
+id_proyecto_jurado
+
+jurado:
+nombre
+especialidad
+id jurado
+id criterios de evaluacion
+
+criterio_evaluacion:
+id criterio evaluacion
+descripción
+puntaje 
+observaciones 
+id calificación final
+
+calificacion_final:
+total 
+id calificación final
