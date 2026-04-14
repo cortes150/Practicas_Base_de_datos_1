@@ -1,0 +1,123 @@
+create table uniprojects;
+use uniprojects;
+
+create table carrera(
+	id_carrera int auto_increment primary key, 
+    inscritos int,
+    semestres int
+);
+
+create table estudiante(
+	id_codigo int auto_increment primary key, 
+    nombre varchar(50),
+    a_p varchar(50),
+    a_m varchar(50),
+    
+    id_carrera int, foreign key(id_carrera) references carrera(id_carrera)
+);
+
+create table materia(
+	id_materia int auto_increment primary key, 
+    
+    id_carrera int, foreign key(id_carrera) references carrera(id_carrera)
+);
+
+create table proyecto(
+	id_proyecto int auto_increment primary key,
+    tema Varchar(50),
+    categoria Varchar(50),
+    fecha date,
+    
+    id_materia int, foreign key(id_materia) references materia(id_materia)
+);
+
+create table jurado(
+	id_jurado int auto_increment primary key,
+    nombre varchar(50),
+    a_p varchar(50),
+    a_m varchar(50),
+    criterio varchar(100)
+);
+
+create table e_p(
+	id_e_p int auto_increment primary key,
+    
+    id_proyecto int, foreign key(id_proyecto) references proyecto(id_proyecto),
+    id_codigo int, foreign key(id_codigo) references estudiante(id_codigo)
+);
+
+create table p_j(
+	id_p_j int auto_increment primary key,
+    
+    id_jurado int, foreign key(id_jurado) references jurado(id_jurado),
+    id_proyecto int, foreign key(id_proyecto) references proyecto(id_proyecto)
+);
+
+create table Evaluacion(
+	id_evaluacion int auto_increment primary key,
+    puntaje double,
+    observaciones varchar(100),
+    
+    id_jurado int, foreign key(id_jurado) references jurado(id_jurado),
+    id_proyecto int, foreign key(id_proyecto) references proyecto(id_proyecto)
+);
+
+
+alter table proyecto
+add observaciones varchar(100),
+add estado varchar(20),
+modify estado varchar(30);
+
+alter table materia
+add nombre varchar(50);
+
+alter table carrera
+add nombre varchar(50);
+
+insert into carrera(inscritos,semestres,nombre)values
+(50,8,'medicina'),
+(100,8,'sistemas'),
+(60,8,'mecatronica');
+
+insert into estudiante(Nombre,a_p,a_m,id_carrera)values
+('mauricio','salces','sanchez',1),
+('kore','torrez','quispe',2),
+('ardilla','tarifa','robles',3);
+
+
+insert into materia(id_carrera,nombre)values
+(1,'pulmon 2'),
+(2,'Base de datos 1'),
+(3,'Circuitos 3');
+
+
+insert into proyecto(tema,categoria,fecha,observaciones,estado)values
+('','','2026/04/14','Poco original','Reprobado'),
+(),
+();
+
+
+insert into jurado(inscritos,semestres)values
+(),
+(),
+();
+
+
+insert into e_p(inscritos,semestres)values
+(),
+(),
+();
+
+
+insert into p_j(inscritos,semestres)values
+(),
+(),
+();
+
+
+insert into evaluacion(inscritos,semestres)values
+(),
+(),
+();
+
+
