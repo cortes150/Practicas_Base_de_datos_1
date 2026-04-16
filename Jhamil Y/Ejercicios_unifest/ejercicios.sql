@@ -11,4 +11,14 @@ where id_tipo = 3;
  -- ejercicio 3 --
 update eventos 
 set aforo_total = 600
-where id_evento = 1;
+where titulo = 'Concierto Rock Universitario';
+
+-- ejercicio 4 -- 
+update pagos
+set metodo_pago = 'efectivo'
+where id_pago = 9;
+
+-- ejercicio 5 --
+update asistencia
+set asistio = 1
+where id_evento = 2;
