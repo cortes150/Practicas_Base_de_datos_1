@@ -18,3 +18,8 @@ update entradas
  set metodo_pago = 'efectivo'
  where id_pago = 9;
  
+ -- quinto
+ update asistencia
+ set asistio = 1
+ where id_asistencia = 4;
+ 
