@@ -45,3 +45,7 @@ Update pagos
 set metodo_pago = 'efectivo'
 where id_pago= 9;
 
+-- Ejercicio 5
+Update asistencia
+set asistio = 1
+where id_asistencia= 4;
