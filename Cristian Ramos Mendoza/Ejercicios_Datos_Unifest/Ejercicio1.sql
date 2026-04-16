@@ -1,7 +1,9 @@
-### Ejercicio 1 :cancelar una entrada que este activa  
-update entradas
-set estado = 'cancelada' 
-where id_entrada = 1;
+###Ejercicio 2 : cambiar el precio de la entrada VIP
+update tipos_entrada
+set precio = 150.00
+where nombre_tipo = 'VIP';  
+
+
 
 
 
