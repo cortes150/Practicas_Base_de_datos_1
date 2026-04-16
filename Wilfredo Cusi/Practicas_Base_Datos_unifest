@@ -1,4 +1,0 @@
--- ejercicio 1
-update entradas
-set entradas = "cancelada"
-where id_entrada = 2;
