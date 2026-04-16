@@ -10,5 +10,6 @@ update entradas
  
  -- tercer
  update eventos 
- set aforo_total = 700
+ set aforo_total = 600
  where id_evento = 1;
+ 
