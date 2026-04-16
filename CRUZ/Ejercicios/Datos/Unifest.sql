@@ -20,3 +20,6 @@ SET metodo_pago = 'efectivo'
 WHERE id_pago = 9;
 --Ejercicio 5
 --actualizar la asistencia del evento 2 con su identificador 2 
+UPDATE asistencia 
+SET asistio = 1 
+WHERE id_asistencia = 2
