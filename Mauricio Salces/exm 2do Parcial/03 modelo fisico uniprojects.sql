@@ -92,32 +92,42 @@ insert into materia(id_carrera,nombre)values
 
 
 insert into proyecto(tema,categoria,fecha,observaciones,estado)values
-('','','2026/04/14','Poco original','Reprobado'),
-(),
-();
+('Cura al cancer','decubrimiento','2026/04/14','Poco original','Reprobado'),
+('Ia que genera mas ia','innovacion','2026/05/15','Proyecto innovador','Aprobado'),
+('Exterminador de comunistas','militar','2026/06/16','Peligroso','Aprobado');
 
 
-insert into jurado(inscritos,semestres)values
-(),
-(),
-();
+insert into jurado(Nombre,a_p,a_m,criterio)values
+('Raquel','Paez','Pinto',''),
+('Wilfred','Alfarez','Cusidiano',''),
+('Ivan','salces','sanchez','');
 
 
-insert into e_p(inscritos,semestres)values
-(),
-(),
-();
+insert into e_p(id_proyecto,id_codigo)values
+(1,1),
+(2,2),
+(3,3);
 
 
-insert into p_j(inscritos,semestres)values
-(),
-(),
-();
+insert into p_j(id_jurado,id_proyecto)values
+(1,1),
+(2,2),
+(3,3);
+
+insert into evaluacion(puntaje,observaciones,id_jurado,id_proyecto)values
+(8.8,'la cura al cancer no es relevante hoy en dia',1,1),
+(84,'la ia la falta una pulida y queda lista',2,2),
+(98.5,'muy interesante pero lamentablemente ya no existen comunistas',3,3);
 
 
-insert into evaluacion(inscritos,semestres)values
-(),
-(),
-();
+update proyecto
+set estado = 'Aprobado'
+where id_proyecto = 1;
+select * from proyecto;
+
+
+delete from estudiante
+where id_codigo = 1;
+select * from estudiante;
 
 
