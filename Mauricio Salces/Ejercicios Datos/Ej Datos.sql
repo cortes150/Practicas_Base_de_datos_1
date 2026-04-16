@@ -11,6 +11,12 @@ Update usuarios
 set correo = 'rivanrete@unifest.edu'
 where id_usuario= 9;
 
+-- Ejercicio 1
 Update entradas
 set estado = 'cancelada'
 where id_entrada= 1;
+
+-- Ejercicio 2
+Update tipos_entrada
+set precio = 250.50
+where id_tipo= 2;
