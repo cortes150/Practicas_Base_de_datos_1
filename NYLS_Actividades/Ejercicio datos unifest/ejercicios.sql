@@ -4,21 +4,21 @@ set estado = 'cancelada'
 where id_entrada = 1;
 
 -- ejercicio2
-UPDATE tipos_entrada
-SET precio = 150.00
-WHERE id_tipo = 2;
+update tipos_entrada
+set precio = 150.00
+where id_tipo = 2;
 
 -- ejercicio3
-UPDATE eventos
-SET aforo_total = 600
-WHERE id_evento = 1;
+update eventos
+set aforo_total = 600
+where id_evento = 1;
 
 -- ejercicio4
-UPDATE pagos
-SET metodo_pago = 'efectivo'
-WHERE id_pago = 9;
+update pagos
+set metodo_pago = 'efectivo'
+where id_pago = 9;
 
 -- ejercicio5
-UPDATE asistencia
-SET asistio = 1
-WHERE id_evento = 2;
+update asistencia
+set asistio = 1
+where id_evento = 2;
