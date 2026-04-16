@@ -20,4 +20,8 @@ UPDATE tipos_entrada SET precio=160 WHERE nombre_tipo="VIP" ;
 UPDATE eventos SET aforo_total=600 WHERE titulo='Concierto Rock Universitario';
 
 -- Ejercicio 6: cambiar el metodo de pago tarjeta por efectivo donde el identificador es 9
+
+UPDATE pagos SET metodo_pago="efectivo" WHERE id_pago = 9;
+
 -- Ejercicio 7: actualizar la asistencia del evento 2 
+
