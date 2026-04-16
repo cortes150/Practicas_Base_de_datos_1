@@ -1,0 +1,10 @@
+ Sistema de resevas de espacios de trabajo y Plataforma Web 
+
+ *Concepto:* 
+Sistema diseñado para ofrecer un espacio de Cowork donde se incluyen la renta del espacio (oficinas, salas de reuniones), servicios incluidos, reservas, gestion de clientes, disponibilidad por horas / horarios de atencion, categorías.
+
+ *Ejemplo:* 
+Por ejemplo, cuando un usuario se registra en el sistema, se almacenan sus datos personales y dandole acceso a la información del sistema para poder listar las opciones que estan disponibles de rentar, revisando la disponibilidad y horarios disponibles. Asimismo, el sistema permitira al administrador / dueño , gestionar su sistema y modificar las disponibilidades agregar mas espacios o desactivar dependiendo el uso.
+
+Estudiantes:
+Walter Fernando Aguilar Mayta
