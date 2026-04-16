@@ -5,7 +5,9 @@ set estado 'cancelada'
 where id_entrada = 6
 --Ejercicio 2
 --cambiar el precio de la entrada vip
-
+update tipos_entrada 
+set precio = 150.00
+where nombre_tipo = 'VIP'
 --Ejercicio 3
 --actualizar el aforo del evento rock universitario, que el nuevo aforo sea 600
 
