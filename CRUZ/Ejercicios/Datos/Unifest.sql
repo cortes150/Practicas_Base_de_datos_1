@@ -15,6 +15,8 @@ SET aforo_total = 600
 WHERE titulo = 'Concierto Rock Universitario'
 --Ejercicio 4
 --cambiar el metodo de pago tarjeta por efectivo donde el identificador es 9
-
+UPDATE pagos 
+SET metodo_pago = 'efectivo' 
+WHERE id_pago = 9;
 --Ejercicio 5
 --actualizar la asistencia del evento 2 con su identificador 2 
