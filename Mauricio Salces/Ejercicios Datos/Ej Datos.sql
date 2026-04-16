@@ -24,4 +24,4 @@ where id_tipo= 2;
 -- Ejercicio 3
 Update eventos
 set aforo_total = 600
-where id_evento= 2;
+where id_evento= 1;
