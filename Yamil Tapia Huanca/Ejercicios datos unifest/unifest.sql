@@ -14,4 +14,7 @@ update eventos
 set aforo_total = 600
 where id_evento = 1;
 -- E4: Cambiar el metodo de pago targeta ´por efectivo donde el id es 9
+update pagos
+set metodo_pago = 'efectivo'
+where id_pago = 9;
 -- E5: actualizar la asistencia del evento 2  id 2 
