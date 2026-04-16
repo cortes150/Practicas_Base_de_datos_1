@@ -8,4 +8,4 @@ update eventos set aforo_total = '600' where id_evento = 1;
 ## 4. cambiar el metodo de pago tarjeta por ejectivo donde el indentificador es 9
 update pagos set metodo_pago = 'efectivo' where id_pago = 9;
 ## 5. actualizar la asistencia del evento 2 
-update asistencia set asistio = 1 where id_asistencia = 3;git 
+update asistencia set asistio = 1 where id_asistencia = 3;
