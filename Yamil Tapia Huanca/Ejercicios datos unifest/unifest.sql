@@ -18,3 +18,6 @@ update pagos
 set metodo_pago = 'efectivo'
 where id_pago = 9;
 -- E5: actualizar la asistencia del evento 2  id 2 
+update asistencia
+set asistio=20
+where id_evento= 2;
