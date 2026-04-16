@@ -10,6 +10,7 @@ INSERT INTO usuarios (usuario, contrasena, correo, nombre_completo, id_rol) VALU
 ('salces','salces2025','salces@unifest.edu','Ana Álvarez',5),
 ('pepito','pepito2025','pepito@unifest.edu','Carlos Rivera',5);
 -- Ejercicio 3: Cancelar una entrada
+UPDATE entradas SET estado="cancelada" WHERE id_entrada = 1;
 -- Ejercicio 4: cambiar precio entrada vip,
  
 -- Ejercicio 5: actualizar el aforo del evento : rock universitario , nuevo aforo a 600
