@@ -12,7 +12,13 @@ INSERT INTO usuarios (usuario, contrasena, correo, nombre_completo, id_rol) VALU
 -- Ejercicio 3: Cancelar una entrada
 UPDATE entradas SET estado="cancelada" WHERE id_entrada = 1;
 -- Ejercicio 4: cambiar precio entrada vip,
- 
+-- En modo seguro de Workbench SQL no admite cambiar si no es el id: Error Code: 1175. 
+-- You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column. 
+-- To disable safe mode, toggle the option in Preferences -> SQL Editor and reconnect.
+
+-- UPDATE tipos_entrada SET precio=160 WHERE nombre_tipo="VIP" ;
+UPDATE tipos_entrada SET precio=160 WHERE id_tipo=2 ; 
+
 -- Ejercicio 5: actualizar el aforo del evento : rock universitario , nuevo aforo a 600
 
 -- Ejercicio 6: cambiar el metodo de pago tarjeta por efectivo donde el identificador es 9
