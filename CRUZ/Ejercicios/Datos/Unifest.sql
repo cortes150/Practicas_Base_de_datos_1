@@ -10,7 +10,9 @@ set precio = 150.00
 where nombre_tipo = 'VIP'
 --Ejercicio 3
 --actualizar el aforo del evento rock universitario, que el nuevo aforo sea 600
-
+UPDATE eventos 
+SET aforo_total = 600 
+WHERE titulo = 'Concierto Rock Universitario'
 --Ejercicio 4
 --cambiar el metodo de pago tarjeta por efectivo donde el identificador es 9
 
