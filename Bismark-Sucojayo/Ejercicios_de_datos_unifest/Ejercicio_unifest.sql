@@ -13,3 +13,8 @@ update entradas
  set aforo_total = 600
  where id_evento = 1;
  
+ -- cuarto
+ update pagos
+ set metodo_pago = 'efectivo'
+ where id_pago = 9;
+ 
