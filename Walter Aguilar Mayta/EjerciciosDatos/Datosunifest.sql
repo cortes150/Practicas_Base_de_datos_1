@@ -12,11 +12,6 @@ INSERT INTO usuarios (usuario, contrasena, correo, nombre_completo, id_rol) VALU
 -- Ejercicio 3: Cancelar una entrada
 UPDATE entradas SET estado="cancelada" WHERE id_entrada = 1;
 -- Ejercicio 4: cambiar precio entrada vip
-INSERT INTO pagos (id_entrada, id_pagador, monto, metodo_pago) VALUES
-(1, 3, 40.00, 'tarjeta'),
-(2, 3, 60.00, 'tarjeta'),
-(1, 3, 40.00, 'tarjeta'),
-(2, 3, 60.00, 'tarjeta'); 
 
 UPDATE tipos_entrada SET precio=160 WHERE nombre_tipo="VIP" ;
 -- UPDATE tipos_entrada SET precio=160 WHERE id_tipo=2 ; 
@@ -25,7 +20,11 @@ UPDATE tipos_entrada SET precio=160 WHERE nombre_tipo="VIP" ;
 UPDATE eventos SET aforo_total=600 WHERE titulo='Concierto Rock Universitario';
 
 -- Ejercicio 6: cambiar el metodo de pago tarjeta por efectivo donde el identificador es 9
-
+INSERT INTO pagos (id_entrada, id_pagador, monto, metodo_pago) VALUES
+(1, 3, 40.00, 'tarjeta'),
+(2, 3, 60.00, 'tarjeta'),
+(1, 3, 40.00, 'tarjeta'),
+(2, 3, 60.00, 'tarjeta'); -- Noveno pago que cambiara de tarjeta a efectivo
 UPDATE pagos SET metodo_pago="efectivo" WHERE id_pago = 9;
 
 -- Ejercicio 7: actualizar la asistencia del evento 2 
