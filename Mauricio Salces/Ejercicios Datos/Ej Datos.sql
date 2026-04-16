@@ -21,6 +21,14 @@ VALUES
 (8, 4, 40.00, 'efectivo'),
 (9, 5, 100.00, 'tarjeta');
 
+-- insert del ej 5
+INSERT INTO asistencia (id_evento, id_usuario, id_entrada, asistio)
+VALUES
+(1, 7, 6, 1),
+(2, 7, 7, 0),
+(2, 8, 8, 0),
+(2, 9, 9, 0);
+
 Update usuarios
 set correo = 'rivanrete@unifest.edu'
 where id_usuario= 9;
