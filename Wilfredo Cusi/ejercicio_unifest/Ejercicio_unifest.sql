@@ -16,5 +16,9 @@ where id_evento = 1;
 -- ejercicio 4 -- 
 update pagos
 set metodo_pago = 'efectivo'
-where id_pagos = 9;
+where id_pago = 9;
 
+-- ejercicio 5 --
+update asistencia
+set asistio = 1
+where id_evento = 2;
