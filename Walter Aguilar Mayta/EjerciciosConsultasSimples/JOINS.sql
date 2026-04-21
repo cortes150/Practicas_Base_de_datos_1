@@ -1,0 +1,58 @@
+-- Mostrar todos los torneos con su respectivo juego
+use battlezone_db;
+-- SELECT * FROM torneo LEFT JOIN juego ON torneo.id_juego=juego.id_juego;
+SELECT torneo.nombre , juego.nombre FROM torneo LEFT JOIN juego ON torneo.id_juego=juego.id_juego;
+SELECT torneo.nombre , juego.nombre FROM torneo t LEFT JOIN juego j ON t.id_juego=j.id_juego;
+-- Mostrar los kills del jugador nombre y kills
+SELECT e.kills, j.nombre FROM estadistica e INNER JOIN jugador j ON j.id_jugador=e.id_jugador;
+SELECT * FROM estadistica e INNER JOIN jugador j ON j.id_jugador=e.id_jugador;
+-- Mostrar jugadores junto a su equipo (nombre y equipo)
+
+-- 1.Mostrar los jugadores junto con su equipo.
+SELECT e.nombre AS nombre_equipo, j.nombre AS jugador_nombre 
+FROM equipo e 
+INNER JOIN jugador_equipo ej ON ej.id_equipo=e.id_equipo
+INNER JOIN jugador j ON j.id_jugador=ej.id_jugador;
+-- 2. Mostrar los torneos junto con su juego.
+SELECT t.nombre AS torneo, j.nombre AS juego
+FROM torneo t 
+INNER JOIN juego j ON t.id_juego=j.id_juego;
+
+-- 3. Mostrar las partidas con su torneo.
+SELECT t.nombre AS torneo, p.fecha AS partida
+FROM torneo t 
+INNER JOIN partida p ON t.id_torneo=p.id_torneo;
+
+
+-- 4. Mostrar estadísticas con el nombre del jugador.
+
+-- 5.Mostrar premios con su torneo.
+
+
+-- 6.Mostrar los jugadores y el equipo al que pertenecen.
+
+-- 7. Mostrar equipos inscritos en torneos.
+
+-- 8. Mostrar partidas con su torneo y juego.
+
+-- 9.Mostrar estadísticas con jugador y partida.
+
+-- 10.Mostrar participaciones con equipo y partida.
+
+
+-- 11.Mostrar todos los jugadores y sus equipos (aunque no tengan).
+
+-- 12.Mostrar todos los torneos y sus premios.
+
+-- 13.Mostrar todos los juegos y sus torneos.
+
+-- 14. Mostrar todas las partidas y participaciones.
+
+-- 15.Mostrar todos los equipos y sus jugadores.
+
+-- 16.Mostrar todos los premios y sus torneos.
+
+-- 17.Mostrar jugadores, equipo y torneo en el que están inscritos.
+-- 18.Mostrar partidas con torneo, juego y estado.
+-- 19.Mostrar estadísticas con jugador, equipo y partida.
+-- 20.Mostrar equipos, torneos y premios obtenidos.
