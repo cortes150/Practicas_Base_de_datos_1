@@ -86,3 +86,6 @@ create table entrega (
     foreign key (id_pedido) references pedido(id_pedido),
     foreign key (id_ruta) references ruta(id_ruta)
 );
+
+-- en la tabla categoria 5 datos, productos 10 datos, platan 3 datos, inventario 15 datos, ruta 5, cliente 5, pedido 5, detallede_pedido 10 datos, entrega 5 datos
+
