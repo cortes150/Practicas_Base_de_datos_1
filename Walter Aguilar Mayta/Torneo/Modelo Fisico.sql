@@ -47,12 +47,17 @@ CREATE TABLE entrega (
     estado varchar(30),
 	FOREIGN KEY (id_pedido) REFERENCES pedido(id_pedido)
 );
-CREATE TABLE inventario (
-    id_pedido INT,
-    cantidad INT ,
-    precio_unitario INT ,
-    detalle varchar(200),
-    id_cliente INT,
-    FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente),
+CREATE TABLE planta (
+	id_planta INT auto_increment primary key,
+    nombre varchar(50),
+    ubicacion varchar(30),
 	FOREIGN KEY (id_pedido) REFERENCES pedido(id_pedido)
+);
+CREATE TABLE inventario (
+	id_inventario INT auto_increment primary key,
+    id_pedido INT,
+    stock INT ,
+    id_producto INT,
+    FOREIGN KEY (id_planta) REFERENCES cliente(id_cliente),
+	FOREIGN KEY (id_producto) REFERENCES producto(id_producto)
 );
