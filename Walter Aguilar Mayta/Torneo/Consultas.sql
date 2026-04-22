@@ -4,7 +4,19 @@
 use sistemadistribucion;
 insert into categoria(tipo)values("refrescos"),("bebidas"),("jugos"),("zumos"),("energeticos");
 
-insert into producto(nombre,precio,id_categoria)values("Pilfrut", 12,3),("yogurt", 15,2),("zumo", 20,4),("coca cola", 18,1),("monster", 25,5);
+insert into producto(nombre,precio,id_categoria)values
+("Pilfrut", 12,3),
+("yogurt", 15,2),
+("zumo", 20,4),
+("coca cola", 18,1),
+("monster", 25,5),
+("aruba", 12,3),
+("delimon", 15,2),
+("kris", 20,4),
+("fanta", 18,1),
+("red bull", 25,5)
+
+;
 
 insert into Distribuidor (id_distribuidor, nombre, telefono) values 
 (1, 'Juan Perez', '70010101'),
