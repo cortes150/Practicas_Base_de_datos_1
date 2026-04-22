@@ -1,3 +1,4 @@
+
 -- NO HACER ESTO EN PRODUCCIÓN
 CREATE TABLE Registro_Sucio (
     id_alumno INT,
