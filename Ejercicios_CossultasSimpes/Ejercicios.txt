@@ -42,7 +42,6 @@ Mostrar estadísticas con jugador y partida.
 
 Mostrar participaciones con equipo y partida.
 
-
 11.
 
 Mostrar todos los jugadores y sus equipos (aunque no tengan).
