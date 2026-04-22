@@ -72,4 +72,3 @@ FROM (
     GROUP BY id_pedido
 ) AS subconsulta;
 
-
