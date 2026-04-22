@@ -66,7 +66,7 @@ create table planta_produccion (
 id_planta int auto_increment primary key,
 direccion varchar(150)
 );
-
+alter table planta_produccion add nombre varchar(50);
 create table inventario( 
 id_inventario int auto_increment primary key,
 stock int,
