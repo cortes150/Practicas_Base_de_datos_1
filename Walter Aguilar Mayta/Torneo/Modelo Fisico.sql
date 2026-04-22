@@ -1,4 +1,4 @@
-
+drop database sistemadistribucion;
 create database sistemadistribucion;
 use sistemadistribucion;
 
