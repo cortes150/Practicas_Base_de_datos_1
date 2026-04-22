@@ -1,63 +1,89 @@
-CREATE DATABASE torneo;
-use torneo;
-CREATE TABLE categoria (
-    id_categoria INT AUTO_INCREMENT PRIMARY KEY,
-    nombre VARCHAR(100) NOT NULL UNIQUE
+
+create database sistemadistribucion;
+use sistemadistribucion;
+
+
+create table categoria (
+    id_categoria int primary key,
+    tipo varchar(50)
 );
-CREATE TABLE producto (
-    id_producto INT AUTO_INCREMENT PRIMARY KEY,
-    nombre VARCHAR(100) NOT NULL UNIQUE,
-    precio INT ,
-    id_categoria INT,
-    FOREIGN KEY (id_categoria) REFERENCES categoria(id_categoria)
+
+
+create table planta_produccion (
+    id_planta_produccion int primary key,
+    nombre varchar(100),
+    ubicacion varchar(150)
 );
-CREATE TABLE cliente (
-    id_cliente INT AUTO_INCREMENT PRIMARY KEY,
-	nombre VARCHAR(100) NOT NULL UNIQUE,
-    telefono INT,
-    ciudad VARCHAR(100)
+
+create table distribuidor (
+    id_distribuidor int primary key,
+    nombre varchar(100),
+    telefono varchar(20)
 );
-CREATE TABLE pedido (
-    id_pedido INT AUTO_INCREMENT PRIMARY KEY,
-    fecha DATE ,
-    estado varchar(20),
-    id_cliente INT,
-    FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente)
+
+create table cliente (
+    id_cliente int primary key,
+    nombre varchar(100),
+    telefono varchar(20),
+    tipo varchar(50),
+    ciudad varchar(50)
 );
-CREATE TABLE detalle_pedido (
-    id_pedido INT,
-    cantidad INT ,
-    precio_unitario INT ,
-    detalle varchar(200),
-    id_cliente INT,
-    FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente),
-	FOREIGN KEY (id_pedido) REFERENCES pedido(id_pedido)
+
+create table producto (
+    id_producto int primary key,
+    nombre varchar(100),
+    precio decimal(10, 2),
+    id_categoria int,
+    foreign key (id_categoria) references categoria(id_categoria)
 );
-CREATE TABLE ruta(
-	id_ruta INT auto_increment primary key,
-    ciudad VARCHAR(50),
-    id_distribuidor INT,
-    FOREIGN KEY (id_distribuidor) REFERENCES distribuidor(id_distribuidor)
+
+create table ruta (
+    id_ruta int primary key,
+    ciudad varchar(50),
+    id_distribuidor int,
+    foreign key (id_distribuidor) references distribuidor(id_distribuidor)
 );
-CREATE TABLE entrega (
-	id_entrega INT auto_increment primary key,
-    id_pedido INT,
+
+create table pedido (
+    id_pedido int primary key,
+    fecha date,
+    estado varchar(50),
+    id_cliente int,
+    foreign key (id_cliente) references cliente(id_cliente)
+);
+
+
+create table detalle_pedido (
+    id_pedido int,
+    id_producto int,
+    id_planta_produccion int,
+    detalle text,
+    cantidad int,
+    precio_unitario decimal(10, 2),
+    primary key (id_pedido, id_producto),
+    foreign key (id_pedido) references pedido(id_pedido),
+    foreign key (id_producto) references producto(id_producto),
+    foreign key (id_planta_produccion) references planta_produccion(id_planta_produccion)
+);
+
+
+create table inventario (
+    id_inventario int primary key,
+    stock int,
+    id_producto int,
+    id_planta_produccion int,
+    foreign key (id_producto) references producto(id_producto),
+    foreign key (id_planta_produccion) references planta_produccion(id_planta_produccion)
+);
+
+create table entrega (
+    id_entrega int primary key,
+    id_pedido int,
+    id_ruta int,
     fecha date,
     hora time,
-    estado varchar(30),
-	FOREIGN KEY (id_pedido) REFERENCES pedido(id_pedido)
+    estado varchar(50),
+    foreign key (id_pedido) references pedido(id_pedido),
+    foreign key (id_ruta) references ruta(id_ruta)
 );
-CREATE TABLE planta (
-	id_planta INT auto_increment primary key,
-    nombre varchar(50),
-    ubicacion varchar(30),
-	FOREIGN KEY (id_pedido) REFERENCES pedido(id_pedido)
-);
-CREATE TABLE inventario (
-	id_inventario INT auto_increment primary key,
-    id_pedido INT,
-    stock INT ,
-    id_producto INT,
-    FOREIGN KEY (id_planta) REFERENCES cliente(id_cliente),
-	FOREIGN KEY (id_producto) REFERENCES producto(id_producto)
-);
+
