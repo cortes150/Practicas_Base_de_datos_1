@@ -8,17 +8,17 @@ insert into categoria(id_categoria,tipo)values(1,"refrescos"),
 (4,"zumos"),
 (5,"energeticos");
 
-insert into producto(nombre,precio,id_categoria)values
-("Pilfrut", 12,3),
-("yogurt", 15,2),
-("zumo", 20,4),
-("coca cola", 18,1),
-("monster", 25,5),
-("aruba", 12,3),
-("delimon", 15,2),
-("kris", 20,4),
-("fanta", 18,1),
-("red bull", 25,5);
+insert into Producto (id_producto, nombre, precio, id_categoria) values 
+(1, 'Soda 2L', 10.50, 1),
+(2, 'Agua Mineral', 5.00, 1),
+(3, 'Leche Entera', 6.50, 2),
+(4, 'Yogurt Frutilla', 12.00, 2),
+(5, 'Papas Fritas', 8.00, 3),
+(6, 'Galletas Saladas', 3.50, 3),
+(7, 'Detergente 1kg', 15.00, 4),
+(8, 'Jabón Líquido', 18.00, 4),
+(9, 'Avena en Hojuelas', 7.00, 5),
+(10, 'Corn Flakes', 22.00, 5);
 insert into Planta_produccion (id_planta_produccion, nombre, ubicacion) values 
 (1, 'Planta Norte', 'Parque Industrial Nro 1'),
 (2, 'Planta Sur', 'Av. Santos Dumont'),

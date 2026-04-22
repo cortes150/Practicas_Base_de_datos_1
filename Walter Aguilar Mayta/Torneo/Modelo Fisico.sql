@@ -30,7 +30,7 @@ create table cliente (
 );
 
 create table producto (
-    id_producto int primary key,
+    id_producto int auto_increment primary key ,
     nombre varchar(100),
     precio decimal(10, 2),
     id_categoria int,
