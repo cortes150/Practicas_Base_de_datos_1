@@ -1,85 +1,100 @@
 import flet as ft
 
 def vista_login(page, ir_a_registro, validar_usuario, ir_a_bienvenida):
-    # Definimos los campos
+    # --- CAMPOS DE ENTRADA ---
     txt_user = ft.TextField(
-        label="Correo",
-        label_style=ft.TextStyle(
-                            size=17,
-                            weight=ft.FontWeight.BOLD,
-                            italic=True,
-                            color=ft.Colors.WHITE,
-                        ),
-        border="underline", 
-        color= "white", 
-        border_color="white"
-    )
-    txt_pass = ft.TextField(
-        label="Contraseña",
-        label_style=ft.TextStyle(
-                            size=17,
-                            weight=ft.FontWeight.BOLD,
-                            italic=True,
-                            color=ft.Colors.WHITE,
-                        ), 
-        password=True, 
+        label="Correo Institucional",
+        hint_text="ejemplo@gmail.com",
+        label_style=ft.TextStyle(color=ft.Colors.WHITE, italic=True),
         border="underline", 
         color="white", 
-        border_color="white"
+        border_color="white",
+        width=300
+    )
+    
+    txt_pass = ft.TextField(
+        label="Contraseña (CI)",
+        label_style=ft.TextStyle(color=ft.Colors.WHITE, italic=True),
+        password=True, 
+        can_reveal_password=True, 
+        border="underline", 
+        color="white", 
+        border_color="white",
+        width=300
     )
 
     def acceder(e):
-        # Llamamos a la función que está en el main
-        nombre_usuario = validar_usuario(txt_user.value, txt_pass.value)
-        if nombre_usuario:
-            # nombre_usuario[0] porque fetchone devuelve una tupla
-            ir_a_bienvenida(page, nombre_usuario[0])
+        datos_usuario = validar_usuario(txt_user.value, txt_pass.value)
+        
+        if datos_usuario:
+            ir_a_bienvenida(page, datos_usuario)
         else:
-            page.snack_bar = ft.SnackBar(ft.Text("Correo o contraseña incorrectos"))
+            page.snack_bar = ft.SnackBar(
+                content=ft.Text("Credenciales incorrectas. Contacte al Administrador."),
+                bgcolor=ft.Colors.RED_700
+            )
             page.snack_bar.open = True
             page.update()
 
+    # --- DISEÑO DE LA INTERFAZ ---
     return ft.Container(
         content=ft.Column([
-            ft.Text("INICIAR SESIÓN", size=30, weight="bold", color="white", text_align="center", width=320),
+            ft.Icon(ft.Icons.LOCK_PERSON_ROUNDED, size=80, color="white"),
+            
+            ft.Text(
+                "SISTEMA DE SOPORTE", 
+                size=28, 
+                weight="bold", 
+                color="white", 
+                text_align="center"
+            ),
+            
+            ft.Text(
+                "Ingrese sus credenciales para continuar", 
+                size=14, 
+                color="white70"
+            ),
+            
+            ft.Container(height=10), 
+            
             txt_user,
             txt_pass,
-            ft.Button("ENTRAR", on_click=acceder, width=280, bgcolor="black", color="white"),
             
-            # --- Aquí agregamos el botón que te faltaba ---
-
-
-            ft.Row([
-    ft.Text("¿No tienes cuenta?", color="white"),
-    ft.TextButton(
-        "Crear cuenta",
-        # Aplicamos el estilo aquí
-        style=ft.ButtonStyle(
-            color={
-                ft.ControlState.HOVERED: ft.Colors.BLUE_400,  # Color al pasar el mouse
-                ft.ControlState.DEFAULT: ft.Colors.WHITE,    # Color normal
-            },
-            # Puedes agregar un ligero color de fondo al pasar el mouse si quieres
-            overlay_color={
-                ft.ControlState.HOVERED: ft.Colors.WHITE10,
-            },
-            # Animación suave para el cambio
-            animation_duration=300,
-        ),
-        on_click=lambda _: ir_a_registro(page)
-    )
-], alignment=ft.MainAxisAlignment.CENTER)
-
-
-
+            ft.Container(height=20), 
+            
+            ft.ElevatedButton(
+                "INICIAR SESIÓN", 
+                on_click=acceder, 
+                width=300, 
+                height=50,
+                style=ft.ButtonStyle(
+                    bgcolor=ft.Colors.WHITE,
+                    color=ft.Colors.BLUE_900,
+                    shape=ft.RoundedRectangleBorder(radius=10),
+                )
+            ),
+            
+            ft.Text(
+                "Acceso restringido a personal autorizado", 
+                size=12, 
+                color="white54",
+                italic=True
+            ),
 
         ], 
-        alignment=ft.MainAxisAlignment.SPACE_EVENLY, 
-        horizontal_alignment=ft.CrossAxisAlignment.CENTER
+        alignment=ft.MainAxisAlignment.CENTER, 
+        horizontal_alignment=ft.CrossAxisAlignment.CENTER,
+        spacing=15
         ),
-        width=320, 
-        height=500, 
+        width=400, 
+        height=650, 
         border_radius=20, 
-        padding=20,
-        gradient=ft.LinearGradient([ft.Colors.BLUE_900, ft.Colors.PURPLE])
+        padding=40,
+        # SOLUCIÓN AL ERROR DE ALIGNMENT:
+        # Usamos ft.Alignment(x, y) donde x=0 es centro e y=-1 es arriba
+        gradient=ft.LinearGradient(
+            begin=ft.Alignment(0, -1), # Equivalente a top_center
+            end=ft.Alignment(0, 1),    # Equivalente a bottom_center
+            colors=["#0d47a1", "#1a237e"]
+        )
     )
