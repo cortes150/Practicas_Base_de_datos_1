@@ -60,8 +60,18 @@ group by e.id_evento;
 
 -- 9.- Muestra los usuarios que no asistieron a ningún evento.
 -- Pista: Puedes usar una subconsulta con NOT IN.
-select u.nombre as usuario , 
+select u.nombre as Usuario , a.asistio
 from usuario u 
+join asistencia a on u.id_usuario = a.id_usuario
+where a.asistio = 0
+order by u.id_usuario;
 
+-- 10.- Muestra cuánto dinero ha pagado en total cada usuario, ordenado de mayor a menor.
+select u.nombre as Usuario , sum(p.monto) as Total_gastado
+from usuario u 
+join compra c on c.id_usuario = u.id_usuario
+join pago p on c.id_compra = p.id_compra
+group by u.id_usuario
+order by Total_gastado desc;
 
 select * from asistencia 
