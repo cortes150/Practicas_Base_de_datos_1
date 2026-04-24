@@ -9,11 +9,12 @@ order by Entradas_vendidas;
 
 -- 2.- Muestra los nombres de los usuarios que realizaron pagos con tarjeta.
 -- Recuerda: Evita duplicados.
-select u.nombre as Usuario , p.metodo
+select u.nombre as Usuario , p.metodo 
 from usuario u
 join compra c on u.id_usuario = c.id_usuario
 join pago p on c.id_compra = p.id_compra
-where p.metodo = 'tarjeta';
+where p.metodo = 'tarjeta'
+order by u.id_usuario;
 
 -- 3.-Muestra el total recaudado por cada método de pago
 select p.metodo , sum(p.monto) as total_recaudado
@@ -74,4 +75,4 @@ join pago p on c.id_compra = p.id_compra
 group by u.id_usuario
 order by Total_gastado desc;
 
-select * from asistencia 
+select * from usuario 
