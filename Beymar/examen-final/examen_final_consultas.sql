@@ -27,12 +27,39 @@ from evento ev
 inner join entrada en
 on ev.id_evento = en.id_evento
 where en.estado = "cancelada"
-group by ev.nombre;
+group by ev.id_evento
+having COUNT(en.id_entrada) >= 1;
 select * from evento;
 select * from entrada;
 -- 5.- Muestra los usuarios que compraron más de una entrada.
+
 -- 6.- Encuentra el evento con la entrada más cara del sistema.
+select ev.nombre as evento, en.precio as entrada_mas_cara
+from evento ev
+inner join entrada en 
+on ev.id_evento = en.id_evento
+where en.precio = (select MAX(precio) from entrada);
 -- 7.- Muestra los usuarios que asistieron al menos a un evento.
+select distinct us.nombre as usuario, asi.asistio
+from usuario us
+inner join asistencia asi
+on us.id_usuario = asi.id_usuario
+where asi.asistio = 1;
+select * from asistencia;
 -- 8.- Muestra el promedio de precios de las entradas por cada evento.
--- 9.- Muestra los usuarios que no asistieron a ningún evento. Pista: Puedes usar una subconsulta con NOT IN.
+
+-- 9.- Muestra los usuarios que no asistieron a ningún evento. Pista: Puedes usar una subconsulta con NOT IN
+select distinct us.nombre as usuario, asi.asistio
+from usuario us
+inner join asistencia asi
+on us.id_usuario = asi.id_usuario
+where not asi.asistio = 1;
 -- 10.- Muestra cuánto dinero ha pagado en total cada usuario, ordenado de mayor a menor
+select sum(pa.monto) as total_pagado, us.nombre as usuario
+from usuario us
+inner join compra com
+on us.id_usuario = com.id_usuario
+inner join pago pa
+on com.id_compra = pa.id_compra
+group by us.id_usuario
+order by total_pagado desc;
