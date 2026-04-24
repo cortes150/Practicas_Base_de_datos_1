@@ -4,8 +4,8 @@
 -- Caso: El Sistema del UniFest 2025
 -- 1.- Lista todos los eventos y la cantidad de entradas vendidas para cada uno.
 -- Sugerencia: Usa una función de conteo y agrupa por evento.
-
-SELECT ev.nombre, SUM(en.estado='vendida' )
+use unifest_db;
+SELECT ev.nombre, SUM(en.estado='vendida') AS cantidad_vendidos
 FROM evento ev
 JOIN entrada en ON en.id_evento=ev.id_evento
 GROUP BY ev.nombre , ev.id_evento
@@ -23,7 +23,7 @@ GROUP BY u.id_usuario, u.nombre
  
 
 -- 3.-Muestra el total recaudado por cada método de pago.
-SELECT metodo  ,SUM(monto) -- p.monto 
+SELECT metodo  ,SUM(monto) AS total_metodo_pago -- p.monto 
 FROM pago
 group by metodo
 ;
