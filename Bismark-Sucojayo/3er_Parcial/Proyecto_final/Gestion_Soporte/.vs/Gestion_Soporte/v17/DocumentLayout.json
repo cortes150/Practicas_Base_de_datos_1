@@ -1,0 +1,185 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Heyd\\source\\repos\\Gestion_Soporte\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{32C5B26C-551D-4697-B62C-1784EAF7FEDF}|Gestion_Soporte\\Gestion_Soporte.csproj|c:\\users\\heyd\\source\\repos\\gestion_soporte\\gestion_soporte\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C5B26C-551D-4697-B62C-1784EAF7FEDF}|Gestion_Soporte\\Gestion_Soporte.csproj|solutionrelative:gestion_soporte\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C5B26C-551D-4697-B62C-1784EAF7FEDF}|Gestion_Soporte\\Gestion_Soporte.csproj|C:\\Users\\Heyd\\source\\repos\\Gestion_Soporte\\gestion_soporte\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C5B26C-551D-4697-B62C-1784EAF7FEDF}|Gestion_Soporte\\Gestion_Soporte.csproj|solutionrelative:gestion_soporte\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C5B26C-551D-4697-B62C-1784EAF7FEDF}|Gestion_Soporte\\Gestion_Soporte.csproj|c:\\users\\heyd\\source\\repos\\gestion_soporte\\gestion_soporte\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{32C5B26C-551D-4697-B62C-1784EAF7FEDF}|Gestion_Soporte\\Gestion_Soporte.csproj|solutionrelative:gestion_soporte\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C5B26C-551D-4697-B62C-1784EAF7FEDF}|Gestion_Soporte\\Gestion_Soporte.csproj|C:\\Users\\Heyd\\source\\repos\\Gestion_Soporte\\gestion_soporte\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{32C5B26C-551D-4697-B62C-1784EAF7FEDF}|Gestion_Soporte\\Gestion_Soporte.csproj|solutionrelative:gestion_soporte\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C5B26C-551D-4697-B62C-1784EAF7FEDF}|Gestion_Soporte\\Gestion_Soporte.csproj|C:\\Users\\Heyd\\source\\repos\\Gestion_Soporte\\gestion_soporte\\formcobro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{32C5B26C-551D-4697-B62C-1784EAF7FEDF}|Gestion_Soporte\\Gestion_Soporte.csproj|solutionrelative:gestion_soporte\\formcobro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C5B26C-551D-4697-B62C-1784EAF7FEDF}|Gestion_Soporte\\Gestion_Soporte.csproj|C:\\Users\\Heyd\\source\\repos\\Gestion_Soporte\\gestion_soporte\\formhistorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{32C5B26C-551D-4697-B62C-1784EAF7FEDF}|Gestion_Soporte\\Gestion_Soporte.csproj|solutionrelative:gestion_soporte\\formhistorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C5B26C-551D-4697-B62C-1784EAF7FEDF}|Gestion_Soporte\\Gestion_Soporte.csproj|C:\\Users\\Heyd\\source\\repos\\Gestion_Soporte\\gestion_soporte\\formregistrotecnico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{32C5B26C-551D-4697-B62C-1784EAF7FEDF}|Gestion_Soporte\\Gestion_Soporte.csproj|solutionrelative:gestion_soporte\\formregistrotecnico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C5B26C-551D-4697-B62C-1784EAF7FEDF}|Gestion_Soporte\\Gestion_Soporte.csproj|c:\\users\\heyd\\source\\repos\\gestion_soporte\\gestion_soporte\\formregistrotecnico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C5B26C-551D-4697-B62C-1784EAF7FEDF}|Gestion_Soporte\\Gestion_Soporte.csproj|solutionrelative:gestion_soporte\\formregistrotecnico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C5B26C-551D-4697-B62C-1784EAF7FEDF}|Gestion_Soporte\\Gestion_Soporte.csproj|C:\\Users\\Heyd\\source\\repos\\Gestion_Soporte\\gestion_soporte\\formhistorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C5B26C-551D-4697-B62C-1784EAF7FEDF}|Gestion_Soporte\\Gestion_Soporte.csproj|solutionrelative:gestion_soporte\\formhistorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C5B26C-551D-4697-B62C-1784EAF7FEDF}|Gestion_Soporte\\Gestion_Soporte.csproj|C:\\Users\\Heyd\\source\\repos\\Gestion_Soporte\\gestion_soporte\\formcobro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C5B26C-551D-4697-B62C-1784EAF7FEDF}|Gestion_Soporte\\Gestion_Soporte.csproj|solutionrelative:gestion_soporte\\formcobro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\Heyd\\source\\repos\\Gestion_Soporte\\Gestion_Soporte\\LoginForm.cs",
+              "RelativeDocumentMoniker": "Gestion_Soporte\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\Heyd\\source\\repos\\Gestion_Soporte\\Gestion_Soporte\\LoginForm.cs",
+              "RelativeToolTip": "Gestion_Soporte\\LoginForm.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABMAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T14:56:36.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormCobro.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Heyd\\source\\repos\\Gestion_Soporte\\Gestion_Soporte\\FormCobro.cs",
+              "RelativeDocumentMoniker": "Gestion_Soporte\\FormCobro.cs",
+              "ToolTip": "C:\\Users\\Heyd\\source\\repos\\Gestion_Soporte\\Gestion_Soporte\\FormCobro.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Gestion_Soporte\\FormCobro.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T09:15:23.41Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Heyd\\source\\repos\\Gestion_Soporte\\Gestion_Soporte\\Form1.cs",
+              "RelativeDocumentMoniker": "Gestion_Soporte\\Form1.cs",
+              "ToolTip": "C:\\Users\\Heyd\\source\\repos\\Gestion_Soporte\\Gestion_Soporte\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Gestion_Soporte\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T13:11:33.887Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Heyd\\source\\repos\\Gestion_Soporte\\Gestion_Soporte\\Form1.cs",
+              "RelativeDocumentMoniker": "Gestion_Soporte\\Form1.cs",
+              "ToolTip": "C:\\Users\\Heyd\\source\\repos\\Gestion_Soporte\\Gestion_Soporte\\Form1.cs",
+              "RelativeToolTip": "Gestion_Soporte\\Form1.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwBAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T04:37:56.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Heyd\\source\\repos\\Gestion_Soporte\\Gestion_Soporte\\LoginForm.cs",
+              "RelativeDocumentMoniker": "Gestion_Soporte\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\Heyd\\source\\repos\\Gestion_Soporte\\Gestion_Soporte\\LoginForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Gestion_Soporte\\LoginForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T19:51:36.395Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormHistorial.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Heyd\\source\\repos\\Gestion_Soporte\\Gestion_Soporte\\FormHistorial.cs",
+              "RelativeDocumentMoniker": "Gestion_Soporte\\FormHistorial.cs",
+              "ToolTip": "C:\\Users\\Heyd\\source\\repos\\Gestion_Soporte\\Gestion_Soporte\\FormHistorial.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Gestion_Soporte\\FormHistorial.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T08:22:14.991Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FormRegistroTecnico.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Heyd\\source\\repos\\Gestion_Soporte\\Gestion_Soporte\\FormRegistroTecnico.cs",
+              "RelativeDocumentMoniker": "Gestion_Soporte\\FormRegistroTecnico.cs",
+              "ToolTip": "C:\\Users\\Heyd\\source\\repos\\Gestion_Soporte\\Gestion_Soporte\\FormRegistroTecnico.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Gestion_Soporte\\FormRegistroTecnico.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T02:26:46.128Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FormRegistroTecnico.cs",
+              "DocumentMoniker": "C:\\Users\\Heyd\\source\\repos\\Gestion_Soporte\\Gestion_Soporte\\FormRegistroTecnico.cs",
+              "RelativeDocumentMoniker": "Gestion_Soporte\\FormRegistroTecnico.cs",
+              "ToolTip": "C:\\Users\\Heyd\\source\\repos\\Gestion_Soporte\\Gestion_Soporte\\FormRegistroTecnico.cs",
+              "RelativeToolTip": "Gestion_Soporte\\FormRegistroTecnico.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T13:43:56.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FormHistorial.cs",
+              "DocumentMoniker": "C:\\Users\\Heyd\\source\\repos\\Gestion_Soporte\\Gestion_Soporte\\FormHistorial.cs",
+              "RelativeDocumentMoniker": "Gestion_Soporte\\FormHistorial.cs",
+              "ToolTip": "C:\\Users\\Heyd\\source\\repos\\Gestion_Soporte\\Gestion_Soporte\\FormHistorial.cs",
+              "RelativeToolTip": "Gestion_Soporte\\FormHistorial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T08:23:49.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FormCobro.cs",
+              "DocumentMoniker": "C:\\Users\\Heyd\\source\\repos\\Gestion_Soporte\\Gestion_Soporte\\FormCobro.cs",
+              "RelativeDocumentMoniker": "Gestion_Soporte\\FormCobro.cs",
+              "ToolTip": "C:\\Users\\Heyd\\source\\repos\\Gestion_Soporte\\Gestion_Soporte\\FormCobro.cs",
+              "RelativeToolTip": "Gestion_Soporte\\FormCobro.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAcwDgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T09:17:25.936Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
